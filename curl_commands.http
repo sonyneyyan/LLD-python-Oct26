@@ -1,0 +1,17 @@
+###
+POST http://127.0.0.1:8000/api/createauthor/
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+POST http://127.0.0.1:8000/api/createbook/
+content-type: application/json
+
+{
+    "title": "python",
+    "author": 1
+
+}
