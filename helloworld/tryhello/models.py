@@ -16,6 +16,7 @@ class Enrollment(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     enroll_date = models.DateTimeField()
+    is_active = models.BooleanField(default=True)
 
 
 
@@ -64,3 +65,17 @@ class Enrollment(models.Model):
 #  Applying auth.0012_alter_user_first_name_max_length... OK
 #  Applying sessions.0001_initial... OK
 #  Applying tryhello.0001_initial... OK
+
+# once we updated one of the field in the models we need to run the migarion steps again
+# here we are adding the field is_active to enrollment model
+
+#python3 manage.py makemigrations
+#Migrations for 'tryhello':
+#  tryhello/migrations/0002_enrollment_is_active.py
+#    + Add field is_active to enrollment
+#
+# python3 manage.py migrate
+#Operations to perform:
+#  Apply all migrations: admin, auth, contenttypes, sessions, tryhello
+#Running migrations:
+#  Applying tryhello.0002_enrollment_is_active... OK
