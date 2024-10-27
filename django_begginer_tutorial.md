@@ -74,34 +74,52 @@ A Django project is essentially a collection of settings and configurations for 
 
 #### myproject/: The root directory of your Django project.
 
-manage.py: A command-line utility that lets you interact with your Django project. You can use it to run the server, make database migrations, and more.
-myproject/: The inner directory named after your project. This directory contains the project-specific settings and configurations.
-init.py: An empty file that indicates this directory is a Python package.
-settings.py: The configuration file for your Django project. It includes settings for database configuration, installed apps, middleware, and otherproject-specific options.
-urls.py: The URL configuration for your project. This file routes URLs to the appropriate views.
-wsgi.py: An entry-point for WSGI-compatible web servers to serve your project. It helps in deploying the project on production servers.
-asgi.py: Used to configure the ASGI (Asynchronous Server Gateway Interface) for your Django project. This is important for handling asynchronous web protocols,such as WebSockets, and can improve performance for certain types of applications.
+#### manage.py: 
+A command-line utility that lets you interact with your Django project. You can use it to run the server, make database migrations, and more.
+#### myproject/: 
+The inner directory named after your project. This directory contains the project-specific settings and configurations.
+#### init.py: 
+An empty file that indicates this directory is a Python package.
+#### settings.py: 
+The configuration file for your Django project. It includes settings for database configuration, installed apps, middleware, and otherproject-specific options.
+#### urls.py: 
+The URL configuration for your project. This file routes URLs to the appropriate views.
+#### wsgi.py: 
+An entry-point for WSGI-compatible web servers to serve your project. It helps in deploying the project on production servers.
+#### asgi.py: 
+Used to configure the ASGI (Asynchronous Server Gateway Interface) for your Django project. This is important for handling asynchronous web protocols,such as WebSockets, and can improve performance for certain types of applications.
 
 #### The App Structure
 
 A Django app is a web application that does something, like a blog system, a membership system, or an event calendar. An app is usually a collection of models, views, templates, and static files that work together to provide a specific piece of functionality.
 
-##### myapp/: A directory containing the files for your Django app.
+#### myapp/: 
+A directory containing the files for your Django app.
 
-init.py: An empty file that indicates this directory is a Python package.
-admin.py: Configuration for the Django admin interface. You can register your models here to manage them through the admin panel.
-apps.py: Configuration for the app itself. This file contains metadata and configuration for the app.
-models.py: Contains the data models for your app. Models define the structure of your database tables and include any business logic related to the data.
-views.py: Contains the view functions or class-based views that handle requests and return responses.
-urls.py: The URL configuration for your app. This file maps URLs to the appropriate views within the app.
-templates/: A directory to store your HTML template files. Templates define how your data is rendered in the browser. It is not automatically genereted.
-static/: A directory to store static files such as CSS, JavaScript, and images. These files are served as-is to the client. It is not automatically genereted.
+#### init.py: 
+An empty file that indicates this directory is a Python package.
+#### admin.py: 
+Configuration for the Django admin interface. You can register your models here to manage them through the admin panel.
+#### apps.py: 
+Configuration for the app itself. This file contains metadata and configuration for the app.
+#### models.py: 
+Contains the data models for your app. Models define the structure of your database tables and include any business logic related to the data.
+#### views.py: 
+Contains the view functions or class-based views that handle requests and return responses.
+#### urls.py: 
+The URL configuration for your app. This file maps URLs to the appropriate views within the app.
+#### templates/: 
+A directory to store your HTML template files. Templates define how your data is rendered in the browser. It is not automatically genereted.
+#### static/: 
+A directory to store static files such as CSS, JavaScript, and images. These files are served as-is to the client. It is not automatically genereted.
 
-##### Why Have Both a Project and Apps?
+#### Why Have Both a Project and Apps?
 
-Project: The project is the overarching container that holds the configuration and settings for your entire website or web service. It can contain multiple apps.
+#### Project: 
+The project is the overarching container that holds the configuration and settings for your entire website or web service. It can contain multiple apps.
 The project-level files (settings.py, urls.py, etc.) manage the overall configuration and URL routing. They set up the global environment in which your appsoperate.
-Apps: Apps are modular components that can be developed independently and reused in different projects. They encapsulate specific functionality and can beplugged into different projects as needed.
+####Apps: 
+Apps are modular components that can be developed independently and reused in different projects. They encapsulate specific functionality and can beplugged into different projects as needed.
 Each app contains its own models, views, templates, and static files. This modular approach allows you to develop and maintain different parts of your webapplication independently.
 
 # Building Your First Django Project
