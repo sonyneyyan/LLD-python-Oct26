@@ -7,6 +7,7 @@ Django's Object-Relational Mapping (ORM) system is a powerful feature that enabl
 ## What is Django ORM?
 
 Django ORM is a component of the Django framework that allows you to define your data models as Python classes. These models are then mapped to database tables, enabling you to perform CRUD (Create, Read, Update, Delete) operations without writing raw SQL.
+<img width="580" alt="Screenshot 2024-10-27 at 16 12 51" src="https://github.com/user-attachments/assets/f94ad494-5b5d-401b-82a9-b8c0800a6ce1">
 
 ---
 
