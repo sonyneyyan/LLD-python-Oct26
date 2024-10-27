@@ -3,7 +3,7 @@ POST http://127.0.0.1:8000/api/createAuthor/
 content-type: application/json
 
 {
-    "name": "first Author"
+    "name": "second author"
 }
 
 ###
@@ -11,7 +11,21 @@ POST http://127.0.0.1:8000/api/createBook/
 content-type: application/json
 
 {
-    "name": "first Book",
-    "authors": 1
+    "name": "second Book",
+    "authors":2
 
 }
+###
+
+GET http://127.0.0.1:8000/api/author/<author_id>/
+###
+
+GET http://127.0.0.1:8000/api/book/<book_id>/
+
+###
+
+GET http://127.0.0.1:8000/api/authors/
+
+###
+
+GET http://127.0.0.1:8000/api/books/
