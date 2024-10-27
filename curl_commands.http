@@ -17,10 +17,12 @@ content-type: application/json
 }
 ###
 
-GET http://127.0.0.1:8000/api/author/<author_id>/
+# GET http://127.0.0.1:8000/api/author/<author_id>/
+GET http://127.0.0.1:8000/api/author/1/
 ###
 
-GET http://127.0.0.1:8000/api/book/<book_id>/
+#GET http://127.0.0.1:8000/api/book/<book_id>/
+GET http://127.0.0.1:8000/api/book/1/
 
 ###
 
